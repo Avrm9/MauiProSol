@@ -1,0 +1,47 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPro.Data"
+             Title="Data"
+             BackgroundColor="#181735">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Welcome to 365 Data" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="White" Margin="0,20,0,20"/>
+
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Sports List">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" x:Name="SportsLst">
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Leagues List">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" x:Name="LeaguesLst">
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Teams List">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" x:Name="TeamLst">
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Special Teams List">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" x:Name="SpecialLst">
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Players List">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" x:Name="PlayerLst">
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
